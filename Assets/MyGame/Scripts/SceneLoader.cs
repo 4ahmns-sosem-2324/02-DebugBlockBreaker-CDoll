@@ -31,9 +31,10 @@ public class SceneLoader : MonoBehaviour {
     {
         SceneManager.LoadScene(CONGRATSSCREEN);
     }
+    
 
     public bool IsLastPlayScene()
     {
-        return SceneManager.GetActiveScene() == LEVEL5;
+        return SceneManager.GetActiveScene().name == LEVEL5;
     }
 }
